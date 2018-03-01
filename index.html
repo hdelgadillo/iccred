@@ -8,7 +8,50 @@
 </head>
 <body>
 
-    hola :v
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">ICCREd</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nuestros Socios</a>
+      </li>
+     
+    
+  </div>
+</nav>
+<div>
+	<form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Nombre:</label>
+    <input type="text"  class="form-control" placeholder="INGRESA TU NOMBRE" required name="nombre" pattern="^[a-zA-Z ]+$" ></div>
+  <div class="form-group">
+    <label for="email">Correo Electronico:</label>
+   <input type="text" class="form-control"  placeholder="INGRESA TU CORREO ELECTRONICO" required name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="correo no valido ">
+  <div class="form-group">
+    <label for="email">Telefono:</label>
+   <input type="tel" class="form-control" placeholder="INGRESA TU NUMERO TELEFONICO" required name="telefono" maxlength="12"  title="numero no valido">
+  </div>
+  <div class="form-group">
+    <label for="email">Puesto a ocupar</label>
+    <input type="text" class="form-control" name="puesto">
+  </div>
+  <div class="file-loading">
+    <input id="input-folder-1" type="file" name="fichero"> <br>
+</div> <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
 
 </body>
 </html>
